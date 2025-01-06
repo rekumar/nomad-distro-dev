@@ -22,9 +22,9 @@ Below are instructions for how to create a dev environment for developing [nomad
    Docker nowadays comes with `docker compose` built in. Prior, you needed to
    install the stand-alone [docker-compose](https://docs.docker.com/compose/install/).
 
-2. Install [uv](https://docs.astral.sh/uv/getting-started/installation/). 
 uv is required to manage your development environment. It's recommended to use the standalone installer or perform a global installation.
 (`brew install uv` on macOS or `dnf install uv` on Fedora).
+2. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (v0.5.14 and above).
 
 3. Install [node.js](https://nodejs.org/en) (v20) and [yarn](https://classic.yarnpkg.com/en/docs/install/)(v1.22). We will use it to setup the GUI.
 
@@ -217,7 +217,7 @@ After the initial setup, here’s how to manage your daily development tasks.
 
 > [!TIP]
 >
-> To run tests for a specific package in an isolated venv use: `uv sync --all-extras --package plugin_a && uv run --package plugin_a --directory packages/plugin_a pytest`
+> To run tests for a specific package in an isolated venv use: `uv run --exact --all-extras --package plugin_a --directory packages/plugin_a pytest`
 
 6. Linting & code formatting
 
