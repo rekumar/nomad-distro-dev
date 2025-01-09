@@ -1,3 +1,9 @@
 [submodule "packages/nomad-FAIR"]
 	path = packages/nomad-FAIR
 	url = https://gitlab.mpcdf.mpg.de/nomad-lab/nomad-FAIR.git
+[submodule "packages/dunia-nomad-plugin"]
+	path = packages/dunia-nomad-plugin
+	url = https://github.com/duniatechnologies/dunia-nomad-plugin
+[submodule "packages/dunia-nomad-parser-cp2k"]
+	path = packages/dunia-nomad-parser-cp2k
+	url = https://github.com/duniatechnologies/dunia-nomad-parser-cp2k
